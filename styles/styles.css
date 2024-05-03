@@ -1,0 +1,90 @@
+@font-face {
+  font-family: TT Lakes;
+  src: url("TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  padding: 16px;
+}
+
+.header {
+  background-color: #f8f8f8;
+}
+
+.header p {
+  font-size: 16px;
+  font-weight: 100;
+  color: #7e7e82;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+  margin: 0;
+}
+
+.brand__item {
+  max-width: 240px;
+  height: 72px;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 8px;
+}
+
+.btn__show {
+  display: none;
+  background: none;
+  font-weight: 500;
+  font-size: 16px;
+  border: none
+}
+
+.btn__arrow {
+  display: none;
+  align-self: center;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-image: url("../assets/icons/arrow.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .brand__items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    gap: 16px;
+    overflow: hidden;
+  }
+
+  .btn{
+    display: flex;
+  }
+
+  .btn__show {
+    display: inline-block;
+
+  }
+
+  .btn__arrow {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1120px) {
+  .brand__items {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(240px, 1fr));
+    gap: 16px;
+    overflow: hidden;
+  }
+
+  .btn__show {
+    display: inline-block;
+  }
+
+  .btn__arrow {
+    display: inline-block;
+  }
+}
